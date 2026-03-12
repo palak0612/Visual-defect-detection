@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Defect Detection</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+.container{
+margin-top:40px;
+}
+
+button{
+padding:10px 20px;
+background:#28a745;
+color:white;
+border:none;
+}
+
+img{
+margin-top:20px;
+width:400px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Image Defect Detection</h1>
+
+<form action="/detect" method="post" enctype="multipart/form-data">
+
+<input type="file" name="image" required>
+<br><br>
+<button type="submit">Detect Defects</button>
+
+</form>
+
+{% if uploaded %}
+
+<h3>Contours Detected: {{contours}}</h3>
+
+<img src="{{ url_for('static', filename='output/' + img) }}">
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
