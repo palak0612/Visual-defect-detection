@@ -151,6 +151,6 @@ This project is open-source and available under the **MIT License**.
 
 # 👩‍💻 Author
 
-**Palak, Mehak and Anchal
+**Palak**
 
 ⭐ If you like this project, consider giving it a **star on GitHub!**
